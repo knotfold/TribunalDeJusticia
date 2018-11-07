@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TribunalDeJusticia</string>
+    <string name="tab_text_1">Inicio</string>
+    <string name="tab_text_2">Actividad Jurisdiccional</string>
+    <string name="tab_text_3">Extras</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="btn_quienes_somos">¿Quienes somos?</string>
+    <string name="btn_guia_medio_impug">Guia para presentar un medio de impugnación</string>
+    <string name="acerca_del_TEECH">Acerca del TEECH:</string>
+    <string name="btn_directorio">Directorio</string>
+</resources>
