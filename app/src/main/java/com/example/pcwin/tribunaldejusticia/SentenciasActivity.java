@@ -17,6 +17,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class SentenciasActivity extends AppCompatActivity {
@@ -26,7 +27,7 @@ public class SentenciasActivity extends AppCompatActivity {
 
     public List<ListItemSentencias> listItem;
 
-    String URL_DATA = "https://rentame.000webhostapp.com/get_departamentov2.php";
+    String URL_DATA = "https://rentame.000webhostapp.com/obtener_sentencias.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +42,10 @@ public class SentenciasActivity extends AppCompatActivity {
 
         recyclerViewSentencias.setAdapter(adapterRVSentencias);
 
+        listItem = new ArrayList<>();
         loadRecyclerViewData(URL_DATA);
+
+
     }
 
 
@@ -67,11 +71,12 @@ public class SentenciasActivity extends AppCompatActivity {
                             {
                                 JSONObject o = array.getJSONObject(i);
                                 ListItemSentencias item = new ListItemSentencias(
-                                        o.getString("idSentencia"),
+                                        o.getString("id"),
                                         o.getString("expediente"),
                                         o.getString("magistrado"),
                                         o.getString("fecha"),
-                                        o.getString("url_pdf")
+                                        o.getString("url_pdf"),
+                                        o.getString("infografia_url")
 
 
 

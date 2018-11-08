@@ -49,8 +49,8 @@ public class MyAdapterSentencias extends RecyclerView.Adapter<MyAdapterSentencia
     @Override
     public void onBindViewHolder(final MyAdapterSentencias.ViewHolder holder, int position) {
         final ListItemSentencias listItemSentencias = listItem.get(position);
-        holder.textExpediente.setText(listItemSentencias.getExpediente());
-        holder.textMagistradoExp.setText(listItemSentencias.getMagistrado());
+        holder.textExpediente.setText("Expediente: "+ listItemSentencias.getExpediente());
+        holder.textMagistradoExp.setText("Magistrado: " + listItemSentencias.getMagistrado());
         holder.textFechaExp.setText(listItemSentencias.getFecha());
 
 
@@ -59,6 +59,12 @@ public class MyAdapterSentencias extends RecyclerView.Adapter<MyAdapterSentencia
         holder.linearLayoutSentencias.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                Intent intent = new Intent(v.getContext(), PDFview.class);
+                Bundle extras = new Bundle();
+                extras.putString("url_pdf", listItemSentencias.getPdf_url());
+                intent.putExtras(extras);
+                v.getContext().startActivity(intent);
 
 
 

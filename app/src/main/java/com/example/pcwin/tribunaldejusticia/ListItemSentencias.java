@@ -12,12 +12,13 @@ public class ListItemSentencias {
    private String infografia_url;
 
 
-    public ListItemSentencias(String idSentencia, String expediente, String magistrado, String fecha, String pdf_url) {
+    public ListItemSentencias(String idSentencia, String expediente, String magistrado, String fecha, String pdf_url, String infografia_url) {
         this.idSentencia = idSentencia;
         this.expediente = expediente;
         this.magistrado = magistrado;
         this.fecha = fecha;
         this.pdf_url = pdf_url;
+        this.infografia_url = infografia_url;
     }
 
     public String getIdSentencia() {
@@ -43,4 +44,6 @@ public class ListItemSentencias {
     public String getInfografia_url() {
         return infografia_url;
     }
+
+
 }
