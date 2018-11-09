@@ -22,7 +22,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".SentenciasActivity" />
-        <activity android:name=".PDFview"></activity>
+        <activity android:name=".PDFview" />
+        <activity android:name=".ListadoTiposSentencias" />
+        <activity android:name=".DirectorioMagistradosActivity"></activity>
     </application>
 
 </manifest>

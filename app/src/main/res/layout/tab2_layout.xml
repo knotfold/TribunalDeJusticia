@@ -1,18 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-   android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     android:id="@+id/constraintLayout"
+    android:background="#FFFFFF"
     android:gravity="center"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
 
-    <ListView
-        android:id="@+id/listView"
+    <TextView
+        android:layout_marginTop="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actividad Jurisdiccional"
+        android:textColor="@android:color/black"
+        android:textSize="35sp"
+        android:gravity="center"
+
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/aristotelica_display_extra_light_trial"
+        android:paddingHorizontal="50dp"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
         android:background="@color/colorAccent"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="#FFFFFF"
+            android:layout_width="350dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
 
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:id="@+id/btn_turnos_expediente"
+                app:icon="@drawable/ic_access_time_grey_35dp"
+                android:paddingStart="30dp"
+                android:backgroundTint="@android:color/white"
+                app:iconTint="@color/myBlue"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:paddingEnd="50dp"
+                app:strokeColor="@color/colorAccent"
+                android:text="@string/turnos_de_expediente"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="50dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:id="@+id/btn_guia_metodo_impug"
+                app:icon="@drawable/ic_chrome_reader_mode_grey_35dp"
+                android:paddingStart="30dp"
+                android:backgroundTint="@android:color/white"
+                app:iconTint="@color/myGreen"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:paddingEnd="50dp"
+                app:strokeColor="@color/colorAccent"
+                android:text="@string/asuntos_en_instrucción"
+
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="50dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:id="@+id/btn_sentencias"
+
+                app:icon="@drawable/ic_gavel_grey_35dp"
+                android:paddingStart="30dp"
+                android:backgroundTint="@android:color/white"
+                app:iconTint="@color/myOrange"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:paddingEnd="50dp"
+                app:strokeColor="@color/colorAccent"
+                android:text="@string/sentencias"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="50dp" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:id="@+id/btn_listados_de_publicacion"
+                app:icon="@drawable/ic_featured_play_list_grey_35dp"
+                android:paddingStart="30dp"
+                android:backgroundTint="@android:color/white"
+                app:iconTint="@color/blueLight"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:paddingEnd="50dp"
+                app:strokeColor="@color/colorAccent"
+                android:text="@string/listados_de_publicacion"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="50dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:id="@+id/btn_listados_de_aceptación"
+                app:icon="@drawable/ic_format_list_bulleted_grey_35dp"
+                android:paddingStart="30dp"
+                android:backgroundTint="@android:color/white"
+                app:iconTint="@android:color/holo_red_light"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:paddingEnd="50dp"
+                app:strokeColor="@color/colorAccent"
+                android:text="@string/listados_de_acuerdos"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="50dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:id="@+id/btn_estadisticas"
+                app:icon="@drawable/ic_import_contacts_orange_35dp"
+                android:paddingStart="30dp"
+                android:backgroundTint="@android:color/white"
+                app:iconTint="@android:color/holo_orange_dark"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:paddingEnd="50dp"
+                app:strokeColor="@color/colorAccent"
+                android:text="@string/estadisticas"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="50dp" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 
 
 </LinearLayout>

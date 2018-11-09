@@ -1,12 +1,13 @@
 package com.example.pcwin.tribunaldejusticia;
 
-import android.support.v7.app.AppCompatActivity;
+import android.annotation.SuppressLint;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.webkit.WebView;
-import android.widget.Toast;
 
 public class PDFview extends AppCompatActivity {
     String url_pdf;
+    @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".ListadoTiposSentencias">
+    <TextView
+        android:text="Seleccione el tipo de sentencia"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/black"
+        android:textSize="35sp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/aristotelica_display_extra_light_trial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/listTiposSentencias"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
