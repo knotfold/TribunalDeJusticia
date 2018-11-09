@@ -64,8 +64,9 @@
                         android:text="@string/btn_quienes_somos"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
-                        android:paddingLeft="30dp"
-                        android:paddingRight="50dp" />
+                        android:paddingRight="50dp"
+                        android:paddingLeft="30dp" />
+
                     <com.google.android.material.button.MaterialButton
                         android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
@@ -81,8 +82,8 @@
 
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
-                        android:paddingLeft="30dp"
-                        android:paddingRight="50dp" />
+                        android:paddingRight="50dp"
+                        android:paddingLeft="30dp" />
 
                     <com.google.android.material.button.MaterialButton
                         android:layout_marginTop="5dp"
@@ -91,12 +92,11 @@
                         app:icon="@drawable/ic_import_contacts_orange_35dp"
                         android:paddingStart="30dp"
                         android:backgroundTint="@android:color/white"
-                        app:iconTint="@color/myOrange"
+                        app:iconTint="@android:color/holo_orange_dark"
                         style="@style/Widget.MaterialComponents.Button.Icon"
                         android:paddingEnd="50dp"
                         app:strokeColor="@color/colorAccent"
                         android:text="@string/btn_directorio"
-
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:paddingLeft="30dp"
